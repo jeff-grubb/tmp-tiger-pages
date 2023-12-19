@@ -1,0 +1,494 @@
+{
+  "tiger_cms_pages_v1": {
+    "aliases": {
+      "tiger_cms_pages": {}
+    },
+    "mappings": {
+      "post": {
+        "properties": {
+          "canonical_url": {
+            "analyzer": "url_http_protocol_ignore",
+            "type": "text"
+          },
+          "components": {
+            "properties": {
+              "content": {
+                "properties": {
+                  "alignment": {
+                    "type": "text"
+                  },
+                  "alt": {
+                    "type": "text"
+                  },
+                  "caption": {
+                    "type": "text"
+                  },
+                  "copyright": {
+                    "type": "text"
+                  },
+                  "credit": {
+                    "type": "text"
+                  },
+                  "external_url": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "format": {
+                    "type": "text"
+                  },
+                  "id": {
+                    "type": "text"
+                  },
+                  "image_type": {
+                    "type": "text"
+                  },
+                  "items": {
+                    "properties": {
+                      "content": {
+                        "properties": {
+                          "title": {
+                            "type": "text"
+                          }
+                        }
+                      },
+                      "content_type": {
+                        "type": "text"
+                      }
+                    }
+                  },
+                  "keep_natural_ratio": {
+                    "type": "boolean"
+                  },
+                  "ordered": {
+                    "type": "boolean"
+                  },
+                  "rank": {
+                    "type": "long"
+                  },
+                  "source": {
+                    "properties": {
+                      "title": {
+                        "type": "text"
+                      },
+                      "wp__origin": {
+                        "properties": {
+                          "blog_id": {
+                            "type": "long"
+                          },
+                          "environment": {
+                            "type": "text"
+                          },
+                          "post_id": {
+                            "type": "long"
+                          },
+                          "post_type": {
+                            "type": "text"
+                          },
+                          "site": {
+                            "type": "text"
+                          },
+                          "source": {
+                            "type": "text"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "text": {
+                    "type": "text"
+                  },
+                  "title": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "url": {
+                    "type": "text"
+                  },
+                  "uuidv5": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "wp__origin": {
+                    "properties": {
+                      "blog_id": {
+                        "type": "long"
+                      },
+                      "environment": {
+                        "type": "text"
+                      },
+                      "post_id": {
+                        "type": "long"
+                      },
+                      "post_type": {
+                        "type": "text"
+                      },
+                      "site": {
+                        "type": "text"
+                      },
+                      "source": {
+                        "type": "text"
+                      }
+                    }
+                  }
+                }
+              },
+              "content_type": {
+                "type": "text"
+              }
+            }
+          },
+          "created_date": {
+            "type": "date"
+          },
+          "description": {
+            "type": "text"
+          },
+          "fn__type": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "full_width": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "text"
+          },
+          "last_modified_date": {
+            "format": "date_time||date_time_no_millis",
+            "type": "date"
+          },
+          "last_published_date": {
+            "format": "date_time||date_time_no_millis",
+            "ignore_malformed": true,
+            "type": "date"
+          },
+          "meta": {
+            "properties": {
+              "chartbeat": {
+                "properties": {
+                  "title": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "viewID": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  }
+                }
+              },
+              "segment": {
+                "properties": {
+                  "page_content_type": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "page_content_type_of_story": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "title": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  }
+                }
+              }
+            }
+          },
+          "meta_description": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "meta_title": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "origination_modified_date": {
+            "type": "date"
+          },
+          "origination_station": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "post_status": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "publication_date": {
+            "format": "date_time||date_time_no_millis",
+            "ignore_malformed": true,
+            "type": "date"
+          },
+          "published": {
+            "type": "boolean"
+          },
+          "scripts": {
+            "type": "text"
+          },
+          "section": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "spark_id": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "stylesheets": {
+            "type": "text"
+          },
+          "subsections": {
+            "properties": {
+              "subsection1": {
+                "fields": {
+                  "keyword": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                  }
+                },
+                "type": "text"
+              },
+              "subsection2": {
+                "fields": {
+                  "keyword": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                  }
+                },
+                "type": "text"
+              },
+              "subsection3": {
+                "fields": {
+                  "keyword": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                  }
+                },
+                "type": "text"
+              },
+              "subsection4": {
+                "fields": {
+                  "keyword": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                  }
+                },
+                "type": "text"
+              }
+            }
+          },
+          "title": {
+            "type": "text"
+          },
+          "uuidv1": {
+            "type": "text"
+          },
+          "uuidv5": {
+            "fields": {
+              "keyword": {
+                "ignore_above": 256,
+                "type": "keyword"
+              }
+            },
+            "type": "text"
+          },
+          "vanity_urls": {
+            "analyzer": "url_http_protocol_ignore",
+            "type": "text"
+          },
+          "wp__order": {
+            "type": "long"
+          },
+          "wp__origin": {
+            "properties": {
+              "blog_id": {
+                "type": "long"
+              },
+              "environment": {
+                "type": "text"
+              },
+              "post_id": {
+                "type": "long"
+              },
+              "post_status": {
+                "fields": {
+                  "keyword": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                  }
+                },
+                "type": "text"
+              },
+              "post_type": {
+                "type": "text"
+              },
+              "site": {
+                "type": "text"
+              },
+              "source": {
+                "type": "text"
+              }
+            }
+          }
+        }
+      }
+    },
+    "settings": {
+      "index": {
+        "analysis": {
+          "analyzer": {
+            "html_english": {
+              "char_filter": [
+                "html_strip"
+              ],
+              "filter": [
+                "english_possessive_stemmer",
+                "lowercase",
+                "english_stop",
+                "english_stemmer"
+              ],
+              "tokenizer": "standard",
+              "type": "custom"
+            },
+            "ignore_the": {
+              "filter": "lowercase",
+              "tokenizer": "the_tokenizer"
+            },
+            "lowercase_trim": {
+              "filter": [
+                "lowercase",
+                "trim"
+              ],
+              "tokenizer": "keyword",
+              "type": "custom"
+            },
+            "path_hierarchy": {
+              "tokenizer": "path_hierarchy"
+            },
+            "url_http_protocol_ignore": {
+              "char_filter": [
+                "http_protocol_char_filter"
+              ],
+              "tokenizer": "keyword"
+            }
+          },
+          "char_filter": {
+            "http_protocol_char_filter": {
+              "mappings": [
+                "http://www. => ",
+                "https://www. => ",
+                "http:// => ",
+                "https:// => "
+              ],
+              "type": "mapping"
+            }
+          },
+          "filter": {
+            "english_possessive_stemmer": {
+              "language": "possessive_english",
+              "type": "stemmer"
+            },
+            "english_stemmer": {
+              "language": "english",
+              "type": "stemmer"
+            },
+            "english_stop": {
+              "stopwords": "_english_",
+              "type": "stop"
+            }
+          },
+          "tokenizer": {
+            "the_tokenizer": {
+              "pattern": "((the)|(THE)|(The)|(THe)|(thE)|(tHE))\\s",
+              "type": "pattern"
+            }
+          }
+        },
+        "creation_date": "1568915749988",
+        "mapper": {
+          "dynamic": "false"
+        },
+        "number_of_replicas": "3",
+        "number_of_shards": "1",
+        "provided_name": "tiger_cms_pages_v1",
+        "uuid": "d9_KOE6oTVKcrVMbTqJ_1w",
+        "version": {
+          "created": "5030299"
+        }
+      }
+    }
+  }
+}
