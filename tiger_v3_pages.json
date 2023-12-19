@@ -20,13 +20,166 @@
                   "alt": {
                     "type": "text"
                   },
+                  "alt_text": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "autoplay": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "background_url": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "canonical_url": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
                   "caption": {
+                    "type": "text"
+                  },
+                  "content_type": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
                     "type": "text"
                   },
                   "copyright": {
                     "type": "text"
                   },
                   "credit": {
+                    "type": "text"
+                  },
+                  "dek": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "description": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "display_type": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "downsized_url": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "duration": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "enable_comments": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "event_code": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "event_title": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "event_uri": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "expiration_date": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "external_id": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "external_uri": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
                     "type": "text"
                   },
                   "external_url": {
@@ -41,16 +194,76 @@
                   "format": {
                     "type": "text"
                   },
+                  "hide_caption": {
+                    "type": "boolean"
+                  },
+                  "hide_media": {
+                    "type": "boolean"
+                  },
+                  "hide_thread": {
+                    "type": "boolean"
+                  },
                   "id": {
                     "type": "text"
                   },
                   "image_type": {
                     "type": "text"
                   },
+                  "is_video": {
+                    "type": "boolean"
+                  },
                   "items": {
                     "properties": {
                       "content": {
                         "properties": {
+                          "alignment": {
+                            "fields": {
+                              "keyword": {
+                                "ignore_above": 256,
+                                "type": "keyword"
+                              }
+                            },
+                            "type": "text"
+                          },
+                          "colSpan": {
+                            "fields": {
+                              "keyword": {
+                                "ignore_above": 256,
+                                "type": "keyword"
+                              }
+                            },
+                            "type": "text"
+                          },
+                          "format": {
+                            "fields": {
+                              "keyword": {
+                                "ignore_above": 256,
+                                "type": "keyword"
+                              }
+                            },
+                            "type": "text"
+                          },
+                          "isHeader": {
+                            "type": "boolean"
+                          },
+                          "rowSpan": {
+                            "fields": {
+                              "keyword": {
+                                "ignore_above": 256,
+                                "type": "keyword"
+                              }
+                            },
+                            "type": "text"
+                          },
+                          "text": {
+                            "fields": {
+                              "keyword": {
+                                "ignore_above": 256,
+                                "type": "keyword"
+                              }
+                            },
+                            "type": "text"
+                          },
                           "title": {
                             "type": "text"
                           }
@@ -64,11 +277,41 @@
                   "keep_natural_ratio": {
                     "type": "boolean"
                   },
+                  "new_window": {
+                    "type": "boolean"
+                  },
+                  "odds_type": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
                   "ordered": {
                     "type": "boolean"
                   },
+                  "playback_url": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
                   "rank": {
                     "type": "long"
+                  },
+                  "section_title": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
                   },
                   "source": {
                     "properties": {
@@ -99,10 +342,82 @@
                       }
                     }
                   },
+                  "spark_id": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "stat": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "tag_operand": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "tag_type": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "tags": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "template": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
                   "text": {
                     "type": "text"
                   },
+                  "thumbnail": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
                   "title": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "type": {
                     "fields": {
                       "keyword": {
                         "ignore_above": 256,
@@ -115,6 +430,15 @@
                     "type": "text"
                   },
                   "uuidv5": {
+                    "fields": {
+                      "keyword": {
+                        "ignore_above": 256,
+                        "type": "keyword"
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "video_type": {
                     "fields": {
                       "keyword": {
                         "ignore_above": 256,
@@ -477,14 +801,14 @@
             }
           }
         },
-        "creation_date": "1568915749988",
+        "creation_date": "1575922891945",
         "mapper": {
           "dynamic": "false"
         },
         "number_of_replicas": "3",
         "number_of_shards": "1",
         "provided_name": "tiger_cms_pages_v1",
-        "uuid": "d9_KOE6oTVKcrVMbTqJ_1w",
+        "uuid": "umflgAVrSO-_AwW9YWEOvg",
         "version": {
           "created": "5030299"
         }
